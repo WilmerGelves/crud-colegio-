@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Crud Colegio Tibú</title>
+</head>
+<body>
+    <main class="container">
+
+        <section class="crud">
+            <h1 class="crud__title">Crear Estudiante</h1>
+            <form id="formEstudiante" class="crud__form">
+                <input type="text" placeholder="Nombre" id="nombreInput" class="formInput">
+
+                <input type="text" placeholder="Apellido" id="apellidoInput" class="formInput">
+
+                <input type="number" placeholder="Cédula" id="cedulaInput" class="formInput">
+
+                <input type="text" placeholder="Grupo" id="grupoInput" class="formInput">
+
+                <button type="submit" id="submitButton" class="button button-primary">Crear</button>
+            </form>
+
+            <table class="crud__table">
+                <thead>
+                    <tr>
+                        <th class="table__header">Nombre</th>
+                        <th class="table__header">Apellido</th>
+                        <th class="table__header">Cédula</th>
+                        <th class="table__header">Grupo</th>
+                        <th class="table__header">Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table__body">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <script type="module" src="/app.js"></script>
+</body>
+</html>
